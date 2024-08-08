@@ -1,0 +1,12 @@
+services:
+  api:
+    build: .
+  database:
+    image: mysql/mysql-server:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: gooooo
+      MYSQL_USER: martin
+      MYSQL_PASSWORD: martin
+    ports:
+      - "3306:3306"
